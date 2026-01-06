@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Post</title>
+  <style>
+    .blog-post h1 {
+      text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .blog-post {
+      background: #fff;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 30px;
+      background-image: url(data:image/jpeg;base64,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);
+      background-size: cover;
+    }
+
+    .author {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+    .blog-post p::first-line {
+      font-weight: bold;
+    }
+    .blog-post p::first-letter {
+      font-size: 2.5rem;
+      color: #3498db;
+      float: left;
+      margin-right: 6px;
+    }
+    blockquote {
+      margin: 20px 0;
+      padding: 15px;
+      background: #f0f0f0;
+      font-style: italic;
+      position: relative;
+    }
+    
+
+    blockquote::before {
+      content: "“";
+      font-size: 2rem;
+      color: #999;
+      position: absolute;
+      left: 3px;
+      top: 5px;
+    }
+    a:link {
+      color: #3498db;
+    }
+
+    a:visited {
+      color: #8e44ad;
+    }
+
+    a:hover {
+      color: #e74c3c;
+      text-decoration: underline;
+    }
+    .headings {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    h4 + h4 {
+      color: #e67e22;
+      border-bottom: 2px solid #e67e22;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <div class="blog-post">
+    <h1>The Benefits of Owning Your Own Business</h1>
+    <div class="author">By Susan Ward</div>
+
+    <p>
+      There are plenty of challenges that come with operating your own business. For many people, though, the rewards of running a business far outweigh the difficulties. In fact, 76% of those who decide to run their own small business are "somewhat happy" or "very happy" with their decision, according to a 2020 survey conducted by Guidant Financial's Small Rucinace Transic Alliance. If you're considering starting your own business, be sure to check out 
+      <a href="#">this helpful resource</a>.
+    </p>
+
+    <blockquote>
+      <i>Fact, 76% of those who decide to run their own small business are 'somewhat happy' or 'very happy' with their decision, according to a 2020 survey conducted by Guidant Financial's Small Business Trends Alliance.</i>
+    </blockquote>
+
+    <div class="headings">
+      <h4>Related Posts</h4>
+      <h4>Popular Posts</h4>
+    </div>
+  </div>
+
+</body>
+</html>
