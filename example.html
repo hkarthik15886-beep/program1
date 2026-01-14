@@ -2,110 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Course Progress Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-light">
+<body>
+   <div class="btn-group-vertical dropright">
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Front end</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Mysql</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item active" href="#">Oracle</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled" href="#">Nosql</a>
+   </div>
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Backend</button>
+    <div class="btn-group">
+      <div class="dropdown-menu">
+      <a class="dropdown-item active" href="#">Mysql</a>
+      <a class="dropdown-item" href="#">Oracle</a>
+      <a class="dropdown-item disabled" href="#">Nosql</a>
+    </div></div>
+<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Database</button>
+<div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Mysql</a>
+      <a class="dropdown-item disabled" href="#">Oracle</a>
+      <a class="dropdown-item active" href="#">Nosql</a>
+</div>
+</div>
+<button data-toggle="collapse" data-target="#demo2">Collapsible</button>
+<div id="demo2" class="collapse show">Some text in collapsible</div>
 
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Courses</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Web Development</li>
-          </ol>
-        </nav>
-
-        <!-- Heading with badge -->
-        <h2 class="mb-4">
-          Web Development Course
-          <span class="badge bg-success ms-2">New</span>
-        </h2>
-
-        <!-- Progress Bars -->
-        <div class="mb-3">
-          <label class="fw-semibold mb-1">HTML</label>
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped bg-success"
-              style="width: 100%;">
-              100%
+<div id = "accordion">
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "card-link" data-toggle = "collapse" href = "#collapseOne">
+                     Accordion #1
+                  </a>
+               </div>
+               <div id = "collapseOne" class = "collapse show" data-parent = "#accordion">
+                  <div class = "card-body">Content for Accordion #1.</div>
+               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="fw-semibold mb-1">CSS</label>
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-              style="width: 75%;">
-              75%
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseTwo">
+                     Accordion #2
+                  </a>
+               </div>
+               <div id = "collapseTwo" class = "collapse" data-parent = "#accordion">
+                  <div class = "card-body">Content for Accordion #2.</div>
+               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="fw-semibold mb-1">JavaScript</label>
-          <div class="progress">
-            <div
-              class="progress-bar bg-warning text-dark"
-              style="width: 50%;">
-              50%
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseThree">
+                     Accordion #3
+                  </a>
+               </div>
+               <div id = "collapseThree" class = "collapse" data-parent = "#accordion">
+                  <div class = "card-body"> Content for Accordion #3.</div>
+               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <label class="fw-semibold mb-1">Bootstrap</label>
-          <div class="progress">
-            <div
-              class="progress-bar bg-danger"
-              style="width: 25%;">
-              25%
-            </div>
-          </div>
-        </div>
-
-        <!-- Button Group -->
-        <div class="btn-group mb-5" role="group" aria-label="Course actions">
-          <button type="button" class="btn btn-success">Start</button>
-          <button type="button" class="btn btn-warning text-dark">Pause</button>
-          <button type="button" class="btn btn-danger">Reset</button>
-        </div>
-
-        <!-- Pagination -->
-        <nav aria-label="Course pagination">
-          <ul class="pagination justify-content-center">
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item disabled">
-              <a class="page-link" href="#">3</a>
-            </li>
-          </ul>
-        </nav>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-  </script>
+         </div>
 </body>
 </html>
