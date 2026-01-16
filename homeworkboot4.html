@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="card-columns">
+      <!--first card-->
+        <div class = "card" style="width: 550px; height:1200px;">
+         <img class="card-img-top"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qcZ53QXi6umNPv89Fjy0qhl_nZtuAtOAJw&s" alt="card 1" style="width: 550px; height: 450px;">
+         <h1 class="card-title "><strong>Nike Running Shoes</strong></h1>
+       <h3 class = "card-text">A top-tier racing shoe designed for breaking personal records in races. It is incredibly lightweight and features a full-length carbon-fiber Flyplate embedded within the ZoomX foam midsole, providing an exceptionally propulsive and energy-returning sensation with each stride.
+       <a href="#" class="btn btn-warning">Read more</a></h3>
+       <div class ="dropdown dropright">
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Options</button>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Add to Wishlist</a>
+<a class="dropdown-item" href="#">Compare</a>
+<a class="dropdown-item" href="#">Report</a>
+</div>
+</div><br>
+<h3>Accordion</h3>
+    
+<div id = "accordion">
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "card-link" data-toggle = "collapse" href = "#collapseOne">
+                     What is Nike's return policy?
+                  </a>
+               </div>
+               <div id = "collapseOne" class = "collapse show" data-parent = "#accordion">
+                  <div class = "card-body">Nike provides a 60-day trial period for most purchases made online (Nike App/Nike.com) or in Nike stores, allowing returns or exchanges within this time frame.</div>
+               </div>
+            </div>
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseTwo">
+                     Do Nike shoes have a warranty?
+                  </a>
+               </div>
+               <div id = "collapseTwo" class = "collapse" data-parent = "#accordion">
+                  <div class = "card-body">Yes, Nike stands behind its products. If your Nike shoes develop a material or workmanship flaw, you can often file a claim.</div>
+               </div>
+            </div>
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseThree">
+                     How do I return items purchased from another retailer?
+                  </a>
+               </div>
+               <div id = "collapseThree" class = "collapse" data-parent = "#accordion">
+                  <div class = "card-body"> You must return items purchased from another retailer (e.g., an authorized Nike seller) to that specific retailer, following their return policy. If the retailer directs you back to Nike, you can use the claim submission form on the Nike website.</div>
+               </div>
+            </div>
+         </div>
+     </div>
+     <!--second card-->
+     <div class = "card" style="width: 550px; height:1200px;">
+         <img class="card-img-top"  src="https://axorhelmets.com/cdn/shop/files/Off_road_Axor_Helmets_600x.jpg?v=1740828657" alt="card 1" style="width: 550px; height: 450px;">
+         <h1 class="card-title "><strong>Apex Ascetic Helmet</strong></h1>
+       <h3 class = "card-text">The Ascetic design embodies raw power and unshakable attitude. Inspired by the fierce spirit of a monkey, it symbolizes strength, instinct, and fearless energy - a perfect reflection of riders who trust their gut, break limits, and own every road with unapologetic confidence.
+       <a href="#" class="btn btn-warning">Read more</a></h3><br>
+       <div class ="dropdown dropright">
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Options</button>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Add to Wishlist</a>
+<a class="dropdown-item" href="#">Compare</a>
+<a class="dropdown-item" href="#">Report</a>
+</div>
+</div><br>
+<h3>Accordion</h3>
+    
+<div id = "accordion">
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "card-link" data-toggle = "collapse" href = "#collapseOne2">
+                     How do I determine my correct helmet size?
+                  </a>
+               </div>
+               <div id = "collapseOne2" class = "collapse show" data-parent = "#accordion">
+                  <div class = "card-body">*Use a measuring tape and place it one inch (approx. 2.5 cm) above your eyebrows.
+                                           *Measure the circumference of your head in centimeters.</div>
+               </div>
+            </div>
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseTwo2">
+                    What safety certifications do Axor helmets have?
+                  </a>
+               </div>
+               <div id = "collapseTwo2" class = "collapse" data-parent = "#accordion">
+                  <div class = "card-body">Axor helmets typically hold safety certifications such as DOT, ECE R-22.06, and ISI, depending on the model.</div>
+               </div>
+            </div>
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseThree2">
+                     Do Axor helmets have good ventilation?
+                  </a>
+               </div>
+               <div id = "collapseThree2" class = "collapse" data-parent = "#accordion">
+                  <div class = "card-body"> Yes, Axor helmets are designed with adjustable ventilation systems for airflow and comfort.</div>
+               </div>
+            </div>
+         </div>
+     </div>
+      <!--third card-->
+     <div class = "card" style="width: 550px; height:1200px;">
+         <img class="card-img-top"  src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/dwh/dw-h5600-1/assets/DW-H5600-1_kv.jpg.transform/main-visual-sp/image.jpg" alt="card 1" style="width: 550px; height: 450px;">
+         <h1 class="card-title "><strong>G-SQUAD 5600 SERIES DW-H5600-1</strong></h1>
+       <h3 class = "card-text">These multi-sport watch comes packed with functions for tracking all kinds of workouts. Measure your heart rate with the optical sensor and use the accelerometer to count steps.
+       <a href="#" class="btn btn-warning">Read more</a></h3><br>
+       <div class ="dropdown dropright">
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Options</button>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Add to Wishlist</a>
+<a class="dropdown-item" href="#">Compare</a>
+<a class="dropdown-item" href="#">Report</a>
+</div>
+</div><br>
+<h3>Accordion</h3>
+    
+<div id = "accordion3">
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "card-link" data-toggle = "collapse" href = "#collapseOne3">
+                     Are G-Shock watches suitable for extreme sports?
+                  </a>
+               </div>
+               <div id = "collapseOne3" class = "collapse show" data-parent = "#accordion3">
+                  <div class = "card-body">Yes, G-Shock watches are specifically designed for high-impact activities with shock resistance, durable materials, and water resistance, making them a go-to choice for athletes and explorers.</div>
+               </div>
+            </div>
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseTwo3">
+                     Are G-Shock watches waterproof?
+                  </a>
+               </div>
+               <div id = "collapseTwo3" class = "collapse" data-parent = "#accordion3">
+                  <div class = "card-body">G-Shock watches are typically water-resistant up to 200 meters, which is suitable for swimming, snorkeling, and most water sports</div>
+               </div>
+            </div>
+            <div class = "card">
+               <div class = "card-header">
+                  <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseThree3">
+                     What makes G-Shocks so durable?
+                  </a>
+               </div>
+               <div id = "collapseThree3" class = "collapse" data-parent = "#accordion3">
+                  <div class = "card-body"> The core of every G-Shock is its hollow case construction, which suspends the inner module to absorb shocks. They use robust materials like resin and carbon fiber, raised bezels to protect the glass, and guarded buttons.</div>
+               </div>
+            </div>
+         </div>
+     </div>
+    </div>
+</body>
+</html>
