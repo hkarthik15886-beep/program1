@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile section</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Feedback</strong></h1>
+    <div class="form-group">
+      <label for="text">Name:</label>
+      <input type="text" class="form-control" id="text" placeholder="Enter Name" name="text">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+    </div>
+    <div class="form-group">
+  <label for="comment">Feedback:</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+    <div class="form-group">
+  <label for="comment">Choose:</label>
+  <div class="input-group mt-3 mb-3">
+  
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+       how you found the site
+    </button>
+    <div class="dropdown-menu form-group">
+      <a class="dropdown-item" href="#">Friends</a>
+      <a class="dropdown-item" href="#">Google</a>
+      <a class="dropdown-item" href="#">Others</a>
+    </div>
+  </div>
+</div><br>
+    
+        <div class="form-check-inline">
+  <label class="form-check-label">
+     <label for="comment" class="form-group">Satisfaction level   : </label>
+    <input type="radio" class="form-check-input "name="optradio">1
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input"name="optradio" > 2
+  </label>
+</div>
+<div class="form-check-inline disabled">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio" disabled> 3
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input "name="optradio"> 4
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input "name="optradio"> 5
+  </label>
+</div>
+     </div>
+</body>
+</html>
