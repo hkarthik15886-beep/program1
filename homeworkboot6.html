@@ -10,22 +10,25 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container bg-dark text-white mb-4">
-       <h1 class="display-3"><strong><i><u>Hot And Sweet Bakery</u></i></strong></h1><br><br>
+    <div class="container bg-dark text-white mb-5">
+       <h1 class="display-3 text-center"><strong><i>Hot And Sweet Bakery</i></strong></h1><br><br>
        <h3 class="display-4"><strong>Feedback</strong></h3>
-
+      <!--name-->
     <div class="form-group">
       <label for="text">Name:</label>
       <input type="text" class="form-control" id="text" placeholder="Enter Name" name="text">
     </div>
+    <!--email-->
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
     </div>
+    <!--feedback-->
     <div class="form-group">
       <label for="comment">Feedback:</label>
       <textarea class="form-control" rows="4" id="comment"></textarea>
     </div>
+    <!--dropdown-->
       <label for="orderType" class="form-label">Type of Order :</label>
       <select class="form-select" id="orderType" required>
                   <option value="" selected disabled>Select an option</option>
@@ -33,12 +36,14 @@
                   <option value="cookies">Cookies</option>
                   <option value="pastries">Pastries</option>
       </select><br><br>
+    <!--satisfaction level-->
     <div class="form-group">
       <label for="satisfaction" class="form-label">
             Satisfaction Level (1-10) :
       </label>
       <input type="range" class="form-control-range" name="range">
-    </div>
+    </div> 
+    <!--radio-->
       <label class="form-label d-block">Preferred Contact Method :</label>
     <div class="form-check-inline">
       <label class="form-check-label">
@@ -50,6 +55,7 @@
       </label>
     </div>
     </div><br><br><br>
+    <!--submit-->
     <div class="submit">
       <button type="button" class="btn btn-danger btn-block">submit Feedback</button>
     </div>
