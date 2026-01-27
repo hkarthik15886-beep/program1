@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #2c7be5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signup-card {
+            background: #ffffff;
+            padding: 30px;
+            width: 65%;
+            height: 1000px;
+        }
+
+        .signup-card h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="signup-card">
+    <h2 class="mb-3 display-4">Sign Up</h2>
+    <p class="text-muted mb-5">Please fill in this form to create an account!</p>
+
+    <form>
+        <div class="form-row">
+        <div class="form-group col-md-6 mb-5">
+                <input type="text" class="form-control form-control-lg bg-light border-0" placeholder="First Name" required>
+         </div>
+         <div class="form-group col-md-6 mb-5">
+                <input type="text" class="form-control form-control-lg bg-light border-0 " placeholder="Last Name" required>
+         </div>
+        </div><br>
+
+        <div class="form-group mb-5">
+            <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="Email" required>
+        </div><br>
+
+        <div class="form-group mb-5">
+            <input type="password" class="form-control form-control-lg bg-light border-0" placeholder="Password" required>
+        </div><br>
+
+        <div class="form-group mb-5">
+            <input type="password" class="form-control form-control-lg bg-light border-0" placeholder="Confirm Password" required>
+        </div><br>
+
+        <div class="form-group form-check display-5">
+            <input type="checkbox" class="form-check-input" id="condiction" required>
+            <label class="form-check-label" for="condiction">
+                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+            </label>
+        </div><br><br>
+
+        <button type="submit" class="btn btn-primary btn-lg">
+            Sign Up
+        </button>
+    </form>
+
+    <div class="d-flex align-items-end text-white" style="height: 270px;">
+       <h3 class="mx-auto"> Already have an account? <a href="#" class="text-white">Login here</a></h3>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

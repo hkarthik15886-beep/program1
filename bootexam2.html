@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Responsive Layout</title>  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .sidebar {
+      height: 500px;
+      background: #f1f1f1;
+    }
+    .sidebar a {
+      display: block;
+      padding: 8px 12px;
+      color:rgb(28, 137, 239) ;
+      text-decoration: none;
+    }
+    .sidebar a.active {
+      background-color: #0d6efd;
+      color: rgb(251, 251, 254);
+    }
+    .heading {
+      background: #e9ecef;
+      padding: 100px;
+      border-radius: 5px;
+    }
+    .row h3 {
+      font-weight: bold;
+      font-size: 50px;
+    }
+    .row p {
+      font-size: 26px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white-50" href="#">Project name</a>
+
+    <!-- Hamburger button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text text-white-50">
+        Logged in as Username
+      </span>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-lg-2 sidebar p-2 ">
+      <h6>SIDEBAR</h6>
+      <a href="#" class="active">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+
+      <h6 class="mt-4">SIDEBAR</h6>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+
+      <h6 class="mt-4">SIDEBAR</h6>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+
+  
+    <div class="col-md-9 col-lg-10 p-4">
+
+      <div class="heading mb-1">
+        <h1 style="font-weight: bold; font-size: 80px;">Hello, world!</h1>
+        <p>
+          This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.
+        </p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#learnMore">
+          Learn more >
+        </button>
+      </div>
+
+
+      <div class="modal fade" id="learnMore">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Learn More</h5>
+        <button type="button" class="btn-close" data-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>This is a Bootstrap modal popup opened by clicking Learn More.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h3>Heading</h3>
+          <p>This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.</p>
+          <button class="btn btn-outline-secondary btn-sm">View details > </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>Heading</h3>
+          <p>This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.</p>
+          <button class="btn btn-outline-secondary btn-sm">View details > </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>Heading</h3>
+          <p>This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.</p>
+          <button class="btn btn-outline-secondary btn-sm">View details > </button>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h3>Heading</h3>
+          <p>This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>Heading</h3>
+          <p>This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>Heading</h3>
+          <p>This is a template for a simple marketing or informational website.
+          It includes a large callout called the hero unit and three supporting
+          pieces of content.use it as a starting point to create something more unique.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
