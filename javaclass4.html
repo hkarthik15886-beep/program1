@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+    const randomNum = getRndInteger(1, 100);
+    console.log("Random number between 1 and 100:", randomNum); 
+
+    function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+    const userscorestring ="75";
+    console.log("User score as string:", userscorestring);
+
+    const userscore = Number(userscorestring);
+    console.log("User score as number:", userscore);
+
+    const difference = Math.abs(randomNum - userscore);
+    console.log("Difference between random number and user score:", difference);
+
+    const roundedsquareRoot = Math.round(Math.sqrt(userscore));
+    console.log("Rounded square root of user score:", roundedsquareRoot);
+
+    const pi_value = Math.PI;
+    console.log("Value of Pi:", pi_value);
+
+    const num = "50"*"2";
+    console.log("Result of multiplying string '50' by string '2':", num);
+    console.log("Type of the result:", typeof num);
+</script>
+
+</body>
+</html>
