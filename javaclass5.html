@@ -19,7 +19,7 @@
         const message = Order.isDelivered && Order.daysSinceDelivery <=7 ? "Eligible for Return." : "Return Period Expired.";
         document.getElementById("result").innerText = message;
 
-         const hasItemName = "itemName" in Order;
+         const Itemstatus = "itemName" in Order;
         console.log("itemName exists:", hasItemName);
 
         delete Order.daysSinceDelivery;
