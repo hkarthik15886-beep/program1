@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>User Profile</h2>
+  <button id="check"> Admin Access</button>
+  <p id="result"></p>
+
+  <script>
+    const user = {
+      name: "Alex",
+      age: 22,
+      isAdmin: true
+    };
+
+    document.getElementById("check").addEventListener("click", () => {
+      let message;
+
+      if ("age" in user) {
+        
+        message = (user.age >= 18 && user.isAdmin) ? "Access Granted": "Access Denied";
+         
+        delete user.age;
+      }
+       else {
+        message = "Age information not available";
+      }
+
+      document.getElementById("result").textContent = message;
+    });
+  </script>
+
+</body>
+</html>
