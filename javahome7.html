@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Event Reminder Tool</h2>
+
+  <label for="eventDate">Enter a past date:</label><br>
+  <input type="date" id="eventDate"> <br><br>
+  <button onclick="showDetails()">Submit</button>
+
+  <div id="result"></div>
+  <script>
+    function showDetails() {
+      const input = document.getElementById("eventDate").value;
+      const result = document.getElementById("result");
+
+      if (!input) {
+        result.textContent = "Please select a date.";
+        return;
+      }
+
+      const pastDate = new Date(input);
+      const today = new Date();
+
+      const year = pastDate.getFullYear();
+      const day = pastDate.getDate();
+
+      const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      const month = monthNames[pastDate.getMonth()];
+
+      let yearsPassed = today.getFullYear() - year;
+
+      const hasCompletedYear =
+        today.getMonth() > pastDate.getMonth() ||
+        (today.getMonth() === pastDate.getMonth() && today.getDate() >= day);
+
+      if (!hasCompletedYear) {
+        yearsPassed--;
+      }
+
+
+       const message =
+        yearsPassed >= 1
+          ? "It has been more than a year since that date."
+          : "It has been less than a year since that date.";
+
+      result.innerHTML = `
+        Date entered: ${day} ${month}, ${year}<br>
+        Full years passed: ${yearsPassed}<br>
+        ${message}
+      `;
+    }
+  </script>
+
+     
+</body>
+</html>
