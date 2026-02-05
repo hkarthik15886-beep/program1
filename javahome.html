@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let input = prompt("Enter a number between 1 and 5:");
+    let guess = Number(input);
+
+let validChances = 0;
+    while (validChances < 5) {
+    if (guess < 1 || guess > 5 || isNaN(guess)) {
+        console.log("Invalid input");
+        continue; 
+    }
+
+    validChances++;
+
+    switch (guess) {
+        case 1:
+            console.log("You entered: One");
+            break;
+        case 2:
+            console.log("You entered: Two");
+            break;
+        case 3:
+            console.log("You entered: Three");
+            break;
+        case 4:
+            console.log("You entered: Four");
+            break;
+        case 5:
+            console.log("You entered: Five");
+            break;
+    }
+
+    if (guess === 3) {
+        console.log("You guessed it right!");
+        break; 
+    } else {
+        console.log("Wrong guess. Try again.");
+        break; 
+    }
+}
+if (validChances === 5) {
+    console.log("Game over");
+}
+
+    </script>
+</body>
+</html>
