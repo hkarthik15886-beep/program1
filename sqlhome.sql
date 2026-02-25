@@ -1,11 +1,10 @@
-
 USE mysqllabs;
-CREATE TABLE `mysqllabs`.`student` (`id` INT(5) NOT NULL , `name` VARCHAR(10) NOT NULL , `course` VARCHAR(15) NOT NULL , `fees_paid` INT(7) NOT NULL , `status` VARCHAR(9) NOT NULL ) ENGINE = InnoDB;
-INSERT INTO student VALUES(1, 'Alice', 'Web Development', 5000, 'Inactive'), (2, 'Bob', 'Data Science', 7000, 'Inactive'), (3, 'Charlie', 'UI/UX Design', 4000, 'Active');
-SELECT * FROM `student`;
-SELECT * FROM `student` WHERE fees_paid>5000;
-UPDATE student SET fees_paid=(fees_paid+1000) WHERE course='Data Science';
-UPDATE student SET status='active' WHERE course='Web Development';
-UPDATE student SET status='inactive',fees_paid=(fees_paid-500) WHERE id=3;
-DELETE FROM student WHERE id=3;
-DELETE FROM student WHERE status='inactive';
+CREATE TABLE `mysqllabs`.`mobiles` (`Id` INT(5) NOT NULL , `Brand` VARCHAR(10) NOT NULL , `Model` VARCHAR(10) NOT NULL , `Price` INT(7) NOT NULL , `Stock` INT(15) NOT NULL ) ENGINE = InnoDB;
+INSERT INTO mobiles VALUES(1, 'Samsung', 'Galaxy M14', 12000, 30), (2, 'Redmi', 'Note 12', 15000, 25), (3, 'Realme', 'Narzo 50', 13000, 20), (4, 'Samsung', 'Galaxy A23', 18000, 10);
+SELECT * FROM `mobiles` WHERE Price>13000 OR Stock<15;
+UPDATE mobiles SET Price=12500,Stock=(Stock+5) WHERE Id=3;
+DELETE FROM mobiles WHERE id=2;
+SELECT MIN(Price),MAX(Price) FROM mobiles;
+SELECT SUM(Stock) FROM mobiles;
+SELECT * FROM `mobiles` ORDER BY Price DESC LIMIT 2;
+SELECT * FROM `mobiles`
