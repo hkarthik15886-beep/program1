@@ -1,0 +1,10 @@
+USE mysqllabs;
+CREATE TABLE `mysqllabs`.`books2` (`Id` INT(5) NOT NULL , `Title` VARCHAR(10) NOT NULL , `Author` VARCHAR(10) NOT NULL , `Genere` VARCHAR(20) NOT NULL , `Price` DECIMAL(10) NOT NULL , `Copies_sold` INT(10) NOT NULL ) ENGINE = InnoDB;
+INSERT INTO books2 VALUES(1, 'The Silent Patient', 'Alex Michaelides', 'Thriller', 399.00, 1200), (2, 'Atomic Habits', 'James Clear', 'Self-help', 499.00, 2000), (3, 'The Psychology of Money', 'Morgan Housel', 'Finance', 350.00, 1800);
+CREATE TABLE `mysqllabs`.`bestsellers` (`Id` INT(5) NOT NULL , `Title` VARCHAR(10) NOT NULL , `Author` VARCHAR(10) NOT NULL , `Genere` VARCHAR(20) NOT NULL , `Price` DECIMAL(10) NOT NULL , `Copies_sold` INT(10) NOT NULL ) ENGINE = InnoDB;
+INSERT INTO bestsellers VALUES(4, 'Ikigai', 'Francesc Miralles', 'Philosophy', 300.00, 2500), (5, 'Think Like a Monk', 'Jay Shetty', 'Self-help', 450.00, 2200);
+SELECT Title,Author FROM books2 UNION ALL SELECT Title,Author FROM bestsellers;
+SELECT * FROM books2 WHERE Price>400;
+SELECT AVG(Price) FROM books2;
+SELECT COUNT(*) FROM books2;
+SELECT Title AS 'Books Title', Author AS 'Written By' FROM books2;
